@@ -1,5 +1,5 @@
 # AES_Library
-AES 128/192/256 encryption/decryption in modes: CBC, ECB, CTR, OFB &amp; CFB
+AES 128/192/256 encryption/decryption in modes: CBC, ECB, CTR, OFB &amp; CFB (a sample desktop application is given in https://github.com/tanel312/AES_LibExample)
 As a blockcipher AES encrypts a block of data in a fixed size that is 128-bit (called blocksize; equals to 16 bytes). It means that AES can only encrypt multiple of the blocksize. If the data to be encrypted is not multiple of the blocksize, pad data needs to be added to match the block size. i.e. if the input data size is 14 bytes, it is smaller than a block and needs padding of 2 more bytes.
 
 By definition AES is a blockcipher methodology but it can be used as a blockcipher or a stream cipher depending on the modes.
@@ -37,3 +37,5 @@ dwBufsize: size of the data
 InitCtr: Initial Counter value (16 bytes - 128bit)
 Mode: Mode of AES; AES_MODEECB or AES_MODECBC
 Func: type of process; ENCRYPT or DECRYPT
+
+It is is provided under GNU General Public License, as it is with no warranty or support. 
